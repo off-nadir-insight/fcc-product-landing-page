@@ -77,6 +77,10 @@ main {
     text-decoration: underline;
 }
 
+h2 {
+    margin-top: 5rem;
+}
+
 #div-video {
     width: 100%;
     height: auto;
@@ -93,11 +97,13 @@ main {
 #div-products {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .cards {
-    width: 30%;
-    padding: 0 10px;
+    flex: 1 0 200px;
+    margin: 15px;
+    padding: 0 20px;
     font-size: 14px;
     text-align: left;
     background-color: var(--secondary-color);
