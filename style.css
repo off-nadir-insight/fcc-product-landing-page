@@ -77,12 +77,6 @@ main {
 }
 
 #nav-bar div a:hover {
-    /* background-color: yellow; */
-    /* color: black; */
     text-decoration: underline;
     text-decoration-thickness: 5px;    
-}
-
-h2 {
-    /* margin-top: 64px; */
 }
