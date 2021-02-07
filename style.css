@@ -1,3 +1,10 @@
+:root {
+    --main-color: #ffad64;
+    --secondary-color: #333237;
+    --accent-color: #add4d3;
+    --background-color: #051622;
+}
+
 @media(max-width: 700px) {
     #header-links {
         display: flex;
@@ -12,14 +19,16 @@
 
 body {
     height: 1000px;
+    margin-top: 64px;
+    border: 1px solid;
 }
 
 main {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     text-align: center;
+    color: var(--main-color);
+    background-color: var(--background-color);
 }
 
 #header {
@@ -32,7 +41,7 @@ main {
     left: 0px;
     top: 0px;
     width: 100%;
-    background-color: #82b74b;
+    background-color: var(--accent-color);
     align-content: center;
 }
 
@@ -59,10 +68,21 @@ main {
 
 #nav-bar div a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
     font-family: sans-serif;
     font-weight: 600;
     flex-basis: 30%;
     /* border: solid; */
     text-align: right;
+}
+
+#nav-bar div a:hover {
+    /* background-color: yellow; */
+    /* color: black; */
+    text-decoration: underline;
+    text-decoration-thickness: 5px;    
+}
+
+h2 {
+    /* margin-top: 64px; */
 }
